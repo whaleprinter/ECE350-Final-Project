@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Vivado junk
+*.bit
+*.dcp
+*.wdb
+*.wcfg
+Project.cache/
+Project.runs/
+Project.gen/
+Project.hw/

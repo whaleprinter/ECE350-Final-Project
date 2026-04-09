@@ -1,0 +1,508 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Dec  9 14:27:52 2025
+| Host         : Roshan-Laptop running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Wrapper_methodology_drc_routed.rpt -pb Wrapper_methodology_drc_routed.pb -rpx Wrapper_methodology_drc_routed.rpx
+| Design       : Wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 91
++-----------+------------------+--------------------------------------------+--------+
+| Rule      | Severity         | Description                                | Checks |
++-----------+------------------+--------------------------------------------+--------+
+| TIMING-14 | Critical Warning | LUT on the clock tree                      | 1      |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                | 80     |
+| DPIR-1    | Warning          | Asynchronous driver check                  | 1      |
+| LUTAR-1   | Warning          | LUT drives async reset alert               | 1      |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal | 8      |
++-----------+------------------+--------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Critical Warning
+LUT on the clock tree  
+The LUT q_reg_i_6 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/busy_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/clicks_taken_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/done_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/motor_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/motor_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/motor_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/motor_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_X/state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/busy_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/clicks_taken_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/done_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/motor_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/motor_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/motor_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/motor_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Critical Warning
+Non-clocked sequential cell  
+The clock pin CPU/steppers/driver_Y/state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP CPU/pen/servo/pwm_gen/lessThan1 input pin CPU/pen/servo/pwm_gen/lessThan1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell CPU/regPCABIR/genblk1[94].dff1/q_i_2__91, with 2 or more inputs, drives asynchronous preset/clear pin(s) CPU/regPCIR/genblk1[54].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[55].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[56].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[57].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[58].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[59].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[5].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[60].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[61].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[62].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[63].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[6].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[7].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[8].dff1/q_reg/CLR,
+CPU/regPCIR/genblk1[9].dff1/q_reg/CLR (the first 15 of 452 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance InstMem/dataOut_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance InstMem/dataOut_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance InstMem/dataOut_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance InstMem/dataOut_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ProcMem/MemoryArray_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ProcMem/MemoryArray_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ProcMem/MemoryArray_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance ProcMem/MemoryArray_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+

@@ -1,0 +1,121 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Dec  9 14:26:26 2025
+| Host         : Roshan-Laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+| Design       : Wrapper
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    43 |
+|    Minimum number of control sets                        |    43 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    43 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |            6 |
+| No           | No                    | Yes                    |              63 |           16 |
+| No           | Yes                   | No                     |               8 |            2 |
+| Yes          | No                    | No                     |             992 |          419 |
+| Yes          | No                    | Yes                    |             515 |          221 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |                 Enable Signal                 |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+| ~CPU_pll/inst/clk_out1 |                                               |                                           |                1 |              1 |         1.00 |
+|  CPU_pll/inst/clk_out1 |                                               | CPU/regPCABIR/genblk1[94].dff1/reset      |                1 |              1 |         1.00 |
+|  busy_reg_i_2_n_0      |                                               | CPU/regPCABIR/genblk1[61].dff1/q_reg_4[0] |                1 |              4 |         4.00 |
+|  busy_reg_i_2_n_0      |                                               | CPU/regPCABIR/genblk1[30].dff1/q_reg_142  |                2 |              4 |         2.00 |
+|  busy_reg_i_2__0_n_0   |                                               | CPU/regPCABIR/genblk1[30].dff1/q_reg_142  |                2 |              4 |         2.00 |
+|  busy_reg_i_2__0_n_0   |                                               | CPU/regPCABIR/genblk1[93].dff1/SR[0]      |                1 |              4 |         4.00 |
+|  CPU_pll/inst/clk_out1 |                                               |                                           |                5 |             20 |         4.00 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_10         |                                           |                9 |             32 |         3.56 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_19         |                                           |               10 |             32 |         3.20 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_18         |                                           |                6 |             32 |         5.33 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_11         |                                           |                7 |             32 |         4.57 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_17         |                                           |               10 |             32 |         3.20 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_5          |                                           |               12 |             32 |         2.67 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_4          |                                           |               18 |             32 |         1.78 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_8          |                                           |                8 |             32 |         4.00 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_12         |                                           |               10 |             32 |         3.20 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_9          |                                           |               17 |             32 |         1.88 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_23         |                                           |                8 |             32 |         4.00 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_13         |                                           |                9 |             32 |         3.56 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_16         |                                           |                9 |             32 |         3.56 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_25         |                                           |               17 |             32 |         1.88 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_29         |                                           |                9 |             32 |         3.56 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_3          |                                           |               12 |             32 |         2.67 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_6          |                                           |               18 |             32 |         1.78 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_1          |                                           |               18 |             32 |         1.78 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_26         |                                           |               15 |             32 |         2.13 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_15         |                                           |               17 |             32 |         1.88 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_20         |                                           |               20 |             32 |         1.60 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_22         |                                           |               27 |             32 |         1.19 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_30         |                                           |               24 |             32 |         1.33 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_2          |                                           |                8 |             32 |         4.00 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_7          |                                           |               28 |             32 |         1.14 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_24         |                                           |                7 |             32 |         4.57 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_21         |                                           |                7 |             32 |         4.57 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_14         |                                           |               18 |             32 |         1.78 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_27         |                                           |               15 |             32 |         2.13 |
+|  busy_reg_i_2_n_0      | CPU/regPCABIR/genblk1[61].dff1/clicks_taken_0 | CPU/regPCABIR/genblk1[30].dff1/q_reg_142  |                8 |             32 |         4.00 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_28         |                                           |               14 |             32 |         2.29 |
+|  CPU_pll/inst/clk_out1 | CPU/MWRSRTRD/genblk1[2].dff1/q_reg_31         |                                           |               12 |             32 |         2.67 |
+|  busy_reg_i_2__0_n_0   | CPU/regPCABIR/genblk1[93].dff1/clicks_taken   | CPU/regPCABIR/genblk1[30].dff1/q_reg_142  |                8 |             32 |         4.00 |
+|  CPU_pll/inst/clk_out1 |                                               | CPU/regPCABIR/genblk1[30].dff1/q_reg_142  |               11 |             54 |         4.91 |
+|  clk0                  | CPU/regPCIR/genblk1[30].dff1/q_reg_0          | CPU/regPCABIR/genblk1[94].dff1/reset      |               48 |             96 |         2.00 |
+|  clk0                  | CPU/regPCABIR/genblk1[30].dff1/done_reg       | CPU/regPCABIR/genblk1[94].dff1/reset      |              157 |            355 |         2.26 |
++------------------------+-----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+
